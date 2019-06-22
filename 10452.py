@@ -9,7 +9,6 @@ def main():
             grid += [list(input())]
 
         dfs(m - 1, grid[m - 1].index('@'))
-        print()
 
 
 
@@ -27,7 +26,7 @@ def dfs(i, j):
             print(direc[k], end=' ')
             dfs(xc, yc)
         elif valid(xc,yc) and grid[xc][yc] == '#':
-            print(direc[k], end=' ')
+            print(direc[k])
 
 
 def valid(i, j):
