@@ -31,8 +31,8 @@ def dfs(i, j):
     if seen[i][j]:
         return
 
-    print(seen[i][j])
     seen[i][j] = 1
+    print(seen)
 
 
     dx = [0, 0, 1, 1, 1, -1, -1, -1]
